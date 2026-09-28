@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Bem-vindo - Biblioteca{% endblock %}
+{% block content %}
+<div class="nav">
+    <span>📚 Sistema de Biblioteca</span>
+    <a href="{{ url_for('auth.logout') }}" style="background: #d9534f; padding: 5px 10px; border-radius: 4px;">Sair</a>
+</div>
+<div class="container" style="text-align: center;">
+    <h1>Bem-vindo, {{ usuario }}! 🎉</h1>
+    <p>Você acessou com sucesso o sistema da sua biblioteca pessoal.</p>
+    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+    <p style="color: #555;">Em breve você poderá gerenciar seus livros lidos e favoritos aqui!</p>
+</div>
+{% endblock %}
